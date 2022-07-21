@@ -1,0 +1,10 @@
+cd SSProject2\Frontend
+npm install -g @angular/cli
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
+   ^(Running an angular command on "VS Code -> Terminal" generates an error. Checking StackOverflow provided the statement above as an answer.)
+
+ng new angular-app
+    -Routing (yes)
+    -Styling (CSS)
+

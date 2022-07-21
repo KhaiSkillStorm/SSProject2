@@ -1,0 +1,18 @@
+cd SSProject2\Backend
+Installed Extentions Spring Initializr
+   - Spring Initializr Java Support
+   - Spring Boot Tools
+   - Spring Boot Dashboard
+   - Spring Boot Extension Pack
+
+Command Palette (Ctrl+Shift+P) 
+   Spring Initializr
+   (Generate Maven Project : 2.7.1 : Java)
+   (com.ssproject2)
+   (backend)
+   (Jar 8)
+   (0 dependencies)
+   Generated in SSProject2\Backend
+
+
+
