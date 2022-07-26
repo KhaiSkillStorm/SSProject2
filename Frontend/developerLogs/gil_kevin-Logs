@@ -8,3 +8,11 @@ ng new angular-app
     -Routing (yes)
     -Styling (CSS)
 
+deprecated angular's original "app.component.html"
+generated Miles' "app.component.html"
+
+ng generate component login-page
+ng generate component error-page
+ng generate component account-page
+ng generate component account-settings
+ng generate component account-billing
