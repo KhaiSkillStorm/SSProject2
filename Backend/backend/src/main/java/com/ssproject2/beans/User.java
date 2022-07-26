@@ -1,5 +1,15 @@
 package com.ssproject2.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -12,12 +22,12 @@ public class User {
 	@Column
 	@NotBlank
 	private String username;
+	@Column(name = "hasplan01")
+	private boolean hasplan01;
 	@Column
-	private boolean hasplan_01;
+	private boolean hasplan02;
 	@Column
-	private boolean hasplan_02;
-	@Column
-	private boolean hasplan_03;
+	private boolean hasplan03;
 	
 	
 	public User() {
@@ -25,13 +35,22 @@ public class User {
 	}
 
 
-	public User(int pk_id, String username, boolean hasplan_01, boolean hasplan_02, boolean hasplan_03) {
+	public User(User user) {
+		this.pk_id = user.getPk_id();
+		this.username = user.getUsername();
+		this.hasplan01 = user.isHasplan01();
+		this.hasplan02 = user.isHasplan02();
+		this.hasplan03 = user.isHasplan03();
+	}
+
+
+	public User(int pk_id, String username, boolean hasplan01, boolean hasplan02, boolean hasplan03) {
 		super();
 		this.pk_id = pk_id;
 		this.username = username;
-		this.hasplan_01 = hasplan_01;
-		this.hasplan_02 = hasplan_02;
-		this.hasplan_03 = hasplan_03;
+		this.hasplan01 = hasplan01;
+		this.hasplan02 = hasplan02;
+		this.hasplan03 = hasplan03;
 	}
 	
 	
@@ -47,30 +66,35 @@ public class User {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public boolean isHasplan_01() {
-		return hasplan_01;
+	
+	public boolean isHasplan02() {
+		return hasplan02;
 	}
-	public void setHasplan_01(boolean hasplan_01) {
-		this.hasplan_01 = hasplan_01;
+	public void setHasplan02(boolean hasplan02) {
+		this.hasplan02 = hasplan02;
 	}
-	public boolean isHasplan_02() {
-		return hasplan_02;
+	public boolean isHasplan03() {
+		return hasplan03;
 	}
-	public void setHasplan_02(boolean hasplan_02) {
-		this.hasplan_02 = hasplan_02;
-	}
-	public boolean isHasplan_03() {
-		return hasplan_03;
-	}
-	public void setHasplan_03(boolean hasplan_03) {
-		this.hasplan_03 = hasplan_03;
+	public void setHasplan03(boolean hasplan03) {
+		this.hasplan03 = hasplan03;
 	}
 
 
 	@Override
 	public String toString() {
-		return "User [pk_id=" + pk_id + ", username=" + username + ", hasplan_01=" + hasplan_01 + ", hasplan_02="
-				+ hasplan_02 + ", hasplan_03=" + hasplan_03 + "]";
+		return "User [pk_id=" + pk_id + ", username=" + username + ", hasplan_01=" + hasplan01 + ", hasplan_02="
+				+ hasplan02 + ", hasplan_03=" + hasplan03 + "]";
+	}
+
+
+	public boolean isHasplan01() {
+		return hasplan01;
+	}
+
+
+	public void setHasplan01(boolean hasplan01) {
+		this.hasplan01 = hasplan01;
 	}
 
 	

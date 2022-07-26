@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/ssproject2
     username: root
-    password: root
+    password: Acrologywavers99
     
   jpa:
     show-sql: true
