@@ -36,5 +36,19 @@ public class UserService {
         }
         return user;
     }
-
+    public User addUser(User user) {
+    	logger.info("Saving new User to database: " + user.getUsername());
+    	return repository.save(user);
+}
+    public void deleteUser(int id) {
+    	repository.deleteById(id);
+    }
+    
+    public void updateUser(User user) {
+    	User update = repository.findById(user.getPk_id()).get();
+    	update.setHasplan01(user.isHasplan01());
+    	update.setHasplan02(user.isHasplan02());
+    	update.setHasplan03(user.isHasplan03());
+    	repository.save(update);
+    }
 }

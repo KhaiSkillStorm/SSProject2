@@ -29,11 +29,6 @@ public class User {
 	@Column
 	private boolean hasplan03;
 	
-	
-	public User() {
-		super();
-	}
-
 
 	public User(User user) {
 		this.pk_id = user.getPk_id();
@@ -44,7 +39,7 @@ public class User {
 	}
 
 
-	public User(int pk_id, String username, boolean hasplan01, boolean hasplan02, boolean hasplan03) {
+	public User(int pk_id, @NotBlank String username, boolean hasplan01, boolean hasplan02, boolean hasplan03) {
 		super();
 		this.pk_id = pk_id;
 		this.username = username;
@@ -52,39 +47,31 @@ public class User {
 		this.hasplan02 = hasplan02;
 		this.hasplan03 = hasplan03;
 	}
-	
-	
+
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public int getPk_id() {
 		return pk_id;
 	}
+
+
 	public void setPk_id(int pk_id) {
 		this.pk_id = pk_id;
 	}
+
+
 	public String getUsername() {
 		return username;
 	}
+
+
 	public void setUsername(String username) {
 		this.username = username;
-	}
-	
-	public boolean isHasplan02() {
-		return hasplan02;
-	}
-	public void setHasplan02(boolean hasplan02) {
-		this.hasplan02 = hasplan02;
-	}
-	public boolean isHasplan03() {
-		return hasplan03;
-	}
-	public void setHasplan03(boolean hasplan03) {
-		this.hasplan03 = hasplan03;
-	}
-
-
-	@Override
-	public String toString() {
-		return "User [pk_id=" + pk_id + ", username=" + username + ", hasplan_01=" + hasplan01 + ", hasplan_02="
-				+ hasplan02 + ", hasplan_03=" + hasplan03 + "]";
 	}
 
 
@@ -97,5 +84,27 @@ public class User {
 		this.hasplan01 = hasplan01;
 	}
 
+
+	public boolean isHasplan02() {
+		return hasplan02;
+	}
+
+
+	public void setHasplan02(boolean hasplan02) {
+		this.hasplan02 = hasplan02;
+	}
+
+
+	public boolean isHasplan03() {
+		return hasplan03;
+	}
+
+
+	public void setHasplan03(boolean hasplan03) {
+		this.hasplan03 = hasplan03;
+	}
+
+
+	
 	
 }

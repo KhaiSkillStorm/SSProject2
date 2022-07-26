@@ -26,7 +26,7 @@ public class UserController {
     @GetMapping
     public ResponseEntity<List<User>> findAll() {
         List<User> models = userService.findAll();
-        logger.debug("Models in controller: " + models);
+//        logger.debug("Models in controller: " + models);
         return new ResponseEntity<List<User>>(models, HttpStatus.OK);
     }
 
