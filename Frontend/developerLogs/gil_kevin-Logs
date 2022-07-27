@@ -1,4 +1,7 @@
+git pull https://github.com/KhaiSkillStorm/SSProject2.git
+
 cd SSProject2\Frontend
+
 npm install -g @angular/cli
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
@@ -11,8 +14,15 @@ ng new angular-app
 deprecated angular's original "app.component.html"
 generated Miles' "app.component.html"
 
+ng generate component home-page
 ng generate component login-page
 ng generate component error-page
 ng generate component account-page
 ng generate component account-settings
 ng generate component account-billing
+ng generate component navigation-header
+ng generate component navigation-footer 
+
+Added routes to "app-routing.module.ts"
+Added a base table for phone numbers/phone plans - Waiting for SQL connection
+Updated the CSS for the Header and Footer

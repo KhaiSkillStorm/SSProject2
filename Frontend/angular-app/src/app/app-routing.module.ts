@@ -4,6 +4,7 @@ import { AccountBillingComponent } from './account-billing/account-billing.compo
 import { AccountPageComponent } from './account-page/account-page.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { AppComponent } from './app.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 
@@ -25,7 +26,12 @@ const routes: Routes = [
   },
   {
     path: 'account/billing', component: AccountBillingComponent
-  }
+  },
+
+  //Wild Card Route for 404 request
+  { 
+    path: '**', pathMatch: 'full', component: ErrorPageComponent 
+  },
 ];
 
 @NgModule({
