@@ -26,3 +26,6 @@ Technologies
 What you use for authentication/how you set it up, is up to you, but you will lose points if your code presents a major risk.
 
 Due Friday July 29th
+
+
+Merve
