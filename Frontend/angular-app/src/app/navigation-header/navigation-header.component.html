@@ -1,7 +1,19 @@
 <!-- angular has it's own way of routing -->
 <!-- any route output it output to the router outlet -->
-<a [routerLink]="['/home']">Home</a> |
-<a [routerLink]="['/login']">Login</a> |
-<a [routerLink]="['/account']">Account</a> | 
-<a [routerLink]="['/account/settings']">Account Settings</a> | 
-<a [routerLink]="['/account/billing']">Account Billing</a> 
+<nav>
+    <div>
+        <a [routerLink]="['/home']">Home</a>
+    </div>
+    <div>
+        <a [routerLink]="['/login']">Login</a>
+    </div>
+    <div>
+        <a [routerLink]="['/account']">Account</a>
+    </div>
+    <div>
+        <a [routerLink]="['/account/settings']">Account Settings</a>
+    </div>
+    <div>
+        <a [routerLink]="['/account/billing']">Account Billing</a>
+    </div>
+</nav>
