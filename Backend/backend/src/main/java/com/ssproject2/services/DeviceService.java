@@ -34,4 +34,9 @@ public class DeviceService {
         
         return device;
 	}
+	
+	public List<Device> findByUserId(int userId){
+		logger.info("finding by userid");
+		return repository.findByUserIdLike(userId);
+	}
 }

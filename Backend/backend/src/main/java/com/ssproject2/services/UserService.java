@@ -7,6 +7,7 @@ import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.ssproject2.beans.Device;
 import com.ssproject2.beans.User;
 import com.ssproject2.data.UserRepository;
 
@@ -51,4 +52,5 @@ public class UserService {
     	update.setHasplan03(user.isHasplan03());
     	repository.save(update);
     }
+    
 }

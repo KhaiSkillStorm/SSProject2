@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssproject2.beans.Device;
 import com.ssproject2.beans.User;
 import com.ssproject2.services.UserService;
 
@@ -34,6 +35,6 @@ public class UserController {
 	public ResponseEntity<User> findById(@PathVariable int id) {
 		return new ResponseEntity<User>(userService.findById(id), HttpStatus.OK);
 	}
-
+    
     
 }

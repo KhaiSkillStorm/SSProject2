@@ -30,10 +30,14 @@ public class DeviceController {
 		 return new ResponseEntity<List<Device>>(deviceService.findAll(), HttpStatus.OK);
 	 }
 	 
-	 @GetMapping("/{id}")
+	 @GetMapping("/id/{id}")
 	 public ResponseEntity<Device> findById(@PathVariable int id) {
 		 logger.info("Calling findById request through http");
 		 return new ResponseEntity<Device>(deviceService.findById(id), HttpStatus.OK);
 		}
-	 
+	 @GetMapping("/userId/{userId}")
+	 public ResponseEntity<List<Device>> findByUsername(@PathVariable int userId){
+		 logger.info("Finding a userid");
+		 return new ResponseEntity<List<Device>>(deviceService.findByUserId(userId),HttpStatus.OK);
+	 }
 }
