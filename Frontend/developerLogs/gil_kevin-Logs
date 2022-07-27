@@ -1,7 +1,13 @@
+cd..
+cd..
 git pull https://github.com/KhaiSkillStorm/SSProject2.git
+git add .
+git commit -m "message"
+git push
+cd Frontend/angular-app
+ng serve
 
 cd SSProject2\Frontend
-
 npm install -g @angular/cli
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
