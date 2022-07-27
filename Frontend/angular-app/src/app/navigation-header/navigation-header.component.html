@@ -1,19 +1,25 @@
 <!-- angular has it's own way of routing -->
 <!-- any route output it output to the router outlet -->
-<nav>
-    <div>
-        <a [routerLink]="['/home']">Home</a>
-    </div>
-    <div>
-        <a [routerLink]="['/login']">Login</a>
-    </div>
-    <div>
-        <a [routerLink]="['/account']">Account</a>
-    </div>
-    <div>
-        <a [routerLink]="['/account/settings']">Account Settings</a>
-    </div>
-    <div>
-        <a [routerLink]="['/account/billing']">Account Billing</a>
-    </div>
-</nav>
+<div>
+  <nav ngbNav class="nav-tabs">
+    <ng-container ngbNavItem>
+      <a class="nav-link" [routerLink]="['/home']">Home</a>
+    </ng-container>
+    <ng-container ngbNavItem>
+      <a class="nav-link" [routerLink]="['/login']">Login</a>
+    </ng-container>
+    <ng-container ngbNavItem>
+      <a class="nav-link" [routerLink]="['/account']">Account</a>
+    </ng-container>
+    <ng-container ngbNavItem>
+      <a class="nav-link" [routerLink]="['/account/settings']"
+        >Account Settings</a
+      >
+    </ng-container>
+    <ng-container ngbNavItem>
+      <a class="nav-link" [routerLink]="['/account/billing']"
+        >Account Billing</a
+      >
+    </ng-container>
+  </nav>
+</div>

@@ -1,9 +1,28 @@
-nav{
-    display: flex;
-    justify-content: space-around;
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
-a{
-    
-    text-decoration: none;
+a {
+  text-decoration: none;
+}
+.nav-link {
+  color: black;
+  background-color: beige;
+}
+#container {
+  height: calc(100vh - 65px);
+}
+
+#navbarText {
+  font-size: 2rem;
+}
+
+.navbar a {
+  color: white;
+}
+
+.nav-link {
+  color: black;
+  background-color: beige;
 }
