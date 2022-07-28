@@ -1,5 +1,41 @@
 <!-- angular has it's own way of routing -->
 <!-- any route output it output to the router outlet -->
+
+<nav ngbNav class="nav-tabs">
+  <div class="background"></div>
+  <ul>
+    <li>
+      <a [routerLink]="['/home']">Home</a>
+    </li>
+    <li>
+      <a class="dropdown-content" [routerLink]="['/account']">Account</a>
+    </li>
+
+    <li>
+      <a class="dropdown-content" [routerLink]="['/account/settings']">Account Settings</a>
+    </li>
+
+    <li>
+      <a class="dropdown-content" [routerLink]="['/account/billing']">Account Billing</a>
+    </li>
+    <li>
+      <a [routerLink]="['/plans']">Plans</a>
+    </li>
+
+    <li>
+      <a [routerLink]="['/phoneNumbers']">Phone Numbers</a>
+    </li>
+
+    <li>
+      <a [routerLink]="['/devices']">Devices</a>
+    </li>
+    <li class = "right">
+      <a [routerLink]="['/login']">Login</a>
+    </li>
+  </ul>
+</nav>
+
+<!--
 <div>
   <nav ngbNav class="nav-tabs">
     <ng-container ngbNavItem>
@@ -35,3 +71,4 @@
     </ng-container>
   </nav>
 </div>
+-->
