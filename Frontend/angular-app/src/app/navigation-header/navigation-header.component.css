@@ -1,4 +1,4 @@
-nav{
+nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,8 +6,10 @@ nav{
   height: 60px;
   display: flex;
   align-items: center;
+  opacity: 0.5;
   background-color: beige;
   font-weight: 600;
+  font-size: 20px;
   justify-content: space-around;
 }
 

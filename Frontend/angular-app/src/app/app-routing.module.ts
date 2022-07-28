@@ -4,38 +4,55 @@ import { AccountBillingComponent } from './account-billing/account-billing.compo
 import { AccountPageComponent } from './account-page/account-page.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { AppComponent } from './app.component';
+import { DeviceComponent } from './device/device.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-
+import { PlanPageComponent } from './plan-page/plan-page.component';
 const routes: Routes = [
   {
-    path: '', redirectTo: 'home', pathMatch: 'full'
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
   {
-    path: 'home', component: HomePageComponent
+    path: 'home',
+    component: HomePageComponent,
   },
   {
-    path: 'login', component: LoginPageComponent
+    path: 'login',
+    component: LoginPageComponent,
   },
   {
-    path: 'account', component: AccountPageComponent
+    path: 'account',
+    component: AccountPageComponent,
   },
   {
-    path: 'account/settings', component: AccountSettingsComponent
+    path: 'account/settings',
+    component: AccountSettingsComponent,
   },
   {
-    path: 'account/billing', component: AccountBillingComponent
+    path: 'account/billing',
+    component: AccountBillingComponent,
   },
-
+  {
+    path: 'plans',
+    component: PlanPageComponent,
+  },
+  {
+    path: 'devices',
+    component: DeviceComponent,
+  },
   //Wild Card Route for 404 request
-  { 
-    path: '**', pathMatch: 'full', component: ErrorPageComponent 
+  {
+    path: '**',
+    pathMatch: 'full',
+    component: ErrorPageComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

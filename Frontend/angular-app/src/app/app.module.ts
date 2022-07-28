@@ -22,13 +22,10 @@ import { NavigationFooterComponent } from './navigation-footer/navigation-footer
     AccountBillingComponent,
     HomePageComponent,
     NavigationHeaderComponent,
-    NavigationFooterComponent
+    NavigationFooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

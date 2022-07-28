@@ -1,0 +1,30 @@
+<div class="content-area">
+  <section>
+    <img src="../../assets/Mobile-Towers.jpeg" />
+    <h3>Gold Plan</h3>
+    <h4>
+      3 line<span *ngIf="plan.currLines !== 1">s</span> active, 2 available
+    </h4>
+    <ul>
+      <ng-container
+        *ngFor="let activeDescriptor of plan.plan.activeDescriptors"
+      >
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ng-container>
+    </ul>
+  </section>
+  <section>
+    <img src="../../assets/Mobile-Towers.jpeg" />
+    <h3>Bronze Plan</h3>
+    <h4>
+      1 line<span *ngIf="plan.currLines !== 1">s</span> active, 0 available
+    </h4>
+    <ul>
+      <ng-container
+        *ngFor="let activeDescriptor of plan.plan.activeDescriptors"
+      >
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ng-container>
+    </ul>
+  </section>
+</div>

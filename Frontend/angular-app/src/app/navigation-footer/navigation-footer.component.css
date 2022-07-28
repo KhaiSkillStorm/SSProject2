@@ -1,28 +1,30 @@
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: beige;
-    font-weight: 600;
-    justify-content: space-around;
-  }
-  
-  a,
-  a:visited,
-  a:hover {
-    color: black;
-    text-decoration: none;
-  }
-  
-  img{
-    margin: 0 16px;
-    height: 40px;
-  }
-  
-  img:hover{
-    opacity: 1;
-  }
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  opacity: 0.5;
+  align-items: center;
+  background-color: beige;
+  font-weight: 800;
+  font-size: 20px;
+  justify-content: space-around;
+}
+
+a,
+a:visited,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  margin: 0 16px;
+  height: 40px;
+}
+
+img:hover {
+  opacity: 1;
+}
