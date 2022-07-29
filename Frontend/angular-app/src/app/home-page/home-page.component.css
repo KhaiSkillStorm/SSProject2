@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-h1 {
+h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -41,7 +41,7 @@ h2 {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  align-items: left;/*align-items: center;*/
+  align-items: left; /*align-items: center;*/
   justify-content: center;
   flex-direction: column;
   font-size: 2vw;

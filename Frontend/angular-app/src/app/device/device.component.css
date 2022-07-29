@@ -185,7 +185,8 @@ img {
 .contain {
   margin: auto;
   padding-top: 100px;
-  width: 40%;
+  margin-left: 185px;
+  width: 140%;
   background-color: #f5f5dc;
   opacity: 0.5;
 }
@@ -197,6 +198,7 @@ td {
 th {
   font-size: 2.3rem;
   padding: 1rem;
+  padding: 10px;
 }
 .card-header {
   font-size: 3rem;
@@ -209,4 +211,7 @@ th {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.tr {
+  margin-left: 50px;
 }
