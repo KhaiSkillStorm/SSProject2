@@ -46,8 +46,7 @@
   transform: translateX(-50%);
 }
 .price-card {
-  background: #f5f5dc;
-  opacity: 0.8;
+  background-color: rgb(245, 245, 220, 0.8);
   padding: 40px 35px;
   margin-bottom: 40px;
   position: relative;
@@ -183,12 +182,13 @@ img {
   width: 50%;
 }
 .contain {
-  margin: auto;
+  /*margin: auto;*/
   padding-top: 100px;
-  margin-left: 185px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /*margin-left: 185px;*/
   width: 140%;
-  background-color: #f5f5dc;
-  opacity: 0.5;
+  background-color: rgb(245, 245, 220, 0.5);
 }
 
 td {
