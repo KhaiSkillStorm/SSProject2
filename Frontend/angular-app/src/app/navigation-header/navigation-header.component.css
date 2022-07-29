@@ -1,11 +1,10 @@
-nav div.background {
+nav {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
-  opacity: 0.5;
-  background-color: beige;
+  background-color: rgb(245, 245, 220, 0.5);
   z-index: -1;
 }
 
@@ -22,7 +21,7 @@ ul li.right {
 }
 
 ul li a {
-  font-size: 20px;
+  font-size: 1vw;
   font-weight: 600;
   color: black;
   padding: 16px 16px;
