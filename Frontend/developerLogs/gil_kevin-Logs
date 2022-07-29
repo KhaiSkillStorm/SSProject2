@@ -11,6 +11,7 @@ cd..
 cd..
 git pull https://github.com/KhaiSkillStorm/SSProject2.git
 cd Frontend/angular-app
+ng g interface Employee --type=model
 
 cd SSProject2\Frontend
 npm install -g @angular/cli
@@ -43,3 +44,8 @@ Updated the Opacity for the footer
 Updated the Opacity for the navigation
 
 ng generate component phone-numbers 
+
+cd Frontend/angular-app
+ng generate class models/user --type=model
+ng generate class models/phone-number --type=model
+ng generate class models/phone-plan --type=model
