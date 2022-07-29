@@ -88,7 +88,7 @@ article {
 
 table {
   width: 100%;
-  margin: 24px 0px;
+  margin: 2px 0px;
   margin-right: 45px;
   margin-left: 45px;
   padding: 8px 24px;
@@ -174,7 +174,6 @@ app-sidebar {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-left: 450px;
 }
 .outher {
   flex-direction: column;
