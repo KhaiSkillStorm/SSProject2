@@ -8,6 +8,7 @@ import { DeviceComponent } from './device/device.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { PhoneNumbersComponent } from './phone-numbers/phone-numbers.component';
 import { PlanPageComponent } from './plan-page/plan-page.component';
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'devices',
     component: DeviceComponent,
+  },
+  {
+    path: 'phoneNumbers',
+    component: PhoneNumbersComponent,
   },
   //Wild Card Route for 404 request
   {

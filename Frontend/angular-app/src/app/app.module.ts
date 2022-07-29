@@ -11,6 +11,7 @@ import { AccountBillingComponent } from './account-billing/account-billing.compo
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavigationHeaderComponent } from './navigation-header/navigation-header.component';
 import { NavigationFooterComponent } from './navigation-footer/navigation-footer.component';
+import { PhoneNumbersComponent } from './phone-numbers/phone-numbers.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NavigationFooterComponent } from './navigation-footer/navigation-footer
     HomePageComponent,
     NavigationHeaderComponent,
     NavigationFooterComponent,
+    PhoneNumbersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
