@@ -7,17 +7,20 @@
     <li>
       <a [routerLink]="['/home']">Home</a>
     </li>
-    <li>
-      <a class="dropdown-content" [routerLink]="['/account']">Account</a>
+
+
+    <li class="dropdown">
+      <a [routerLink]="['/account']">Account</a>
     </li>
 
-    <li>
-      <a class="dropdown-content" [routerLink]="['/account/settings']">Account Settings</a>
+    <li class="dropdown-content">
+      <a [routerLink]="['/account/settings']">Account Settings</a>
     </li>
 
-    <li>
-      <a class="dropdown-content" [routerLink]="['/account/billing']">Account Billing</a>
+    <li class="dropdown-content">
+      <a [routerLink]="['/account/billing']">Account Billing</a>
     </li>
+    
     <li>
       <a [routerLink]="['/plans']">Plans</a>
     </li>
