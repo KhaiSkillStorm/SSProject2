@@ -1,3 +1,11 @@
+#id01{
+  background-color: rgb(245, 245, 220, 0.5);
+  z-index: -1;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/*
 .intro-header {
   height: unset !important;
 }
@@ -68,3 +76,4 @@ h5 {
     height: 700px;
   }
 }
+*/
